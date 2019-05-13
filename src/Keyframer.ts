@@ -2,12 +2,12 @@ import { toArray, IObject, isObject } from "@daybrush/utils";
 import { Frame } from "scenejs";
 import { KEYFRAMES_RULE, KEYFRAME_RULE } from "./consts";
 /**
- * Make the keyframes the keyframes object.
+ * Make the CSS Keyframes the keyframes object.
  * @namespace Keyframer
  */
 
 /**
-* Make the keyframes the keyframes deep object.
+* Make the CSS Keyframes the keyframes deep object.
  * @memberof Keyframer
  * @param - The name of the keyframes(`CSSKeyframes​Rule`) in the stylesheet(`CSSStyleSheet`).
  * @returns the keyframes deep object
@@ -56,7 +56,7 @@ export function getKeyframesObject(name: string | IObject<string>): IObject<any>
 }
 
 /**
- * Make the keyframes the keyframes object.
+ * Make the CSS Keyframes the keyframes object.
  * @memberof Keyframer
  * @param - The name of the keyframes(`CSSKeyframes​Rule`) in the stylesheet(`CSSStyleSheet`).
  * @returns the keyframes object

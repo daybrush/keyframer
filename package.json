@@ -1,7 +1,7 @@
 {
   "name": "keyframer",
   "version": "0.0.1",
-  "description": "Make the keyframes the keyframes object.",
+  "description": "Make the CSS Keyframes the keyframes object.",
   "main": "./dist/keyframer.cjs.js",
   "module": "./dist/keyframer.esm.js",
   "sideEffects": false,

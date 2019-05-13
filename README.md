@@ -1,6 +1,6 @@
 # keyframer [![npm version](https://badge.fury.io/js/keyframer.svg)](https://badge.fury.io/js/keyframer)
 
-Make the keyframes the keyframes object.
+Make the CSS Keyframes the keyframes object.
 
 ## Installation
 ### npm
@@ -40,6 +40,7 @@ $ npm install keyframer
 </style>
 ```
 
+### Get the keyframes object
 ```js
 import { getKeyframes, getKeyframesObject } from "keyframer";
 
@@ -72,9 +73,20 @@ const obj = getKeyframes("keyframes");
 // Keyframer.getKeyframesObject("keyframes")
 const obj = getKeyframesObject("keyframes");
 ```
-## API Documents
-* [API documentation](https://daybrush.com/keyframer/release/latest/doc/)
 
+### Play the CSS Keyframes with [scenejs](https://github.com/daybrush/scenejs)
+```js
+import { SceneItem } from "scenejs";
+import { getKeyframes, getKeyframesObject } from "keyframer";
+
+new SceneItem(getKeyframes("keyframes"))
+  .setDuration(1)
+  .setSelector("[data-keyframer] .rect")
+  .play();
+```
+## API Documents
+* [API Documentation](https://daybrush.com/keyframer/release/latest/doc/)
+* [API Features Documentation](https://daybrush.com/scenejs/features.html#keyframer)
 ```
 MIT License
 
