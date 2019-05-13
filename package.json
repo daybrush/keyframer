@@ -1,8 +1,8 @@
 {
   "name": "keyframer",
   "version": "0.0.1",
-  "description": "Make the keyframes in the form of the keyframes object or a playable animator.",
-  "main": "./dist/keyframer.js",
+  "description": "Make the keyframes the keyframes object.",
+  "main": "./dist/keyframer.cjs.js",
   "module": "./dist/keyframer.esm.js",
   "sideEffects": false,
   "types": "declaration/index.d.ts",
@@ -15,6 +15,16 @@
     "release": "npm run build && npm run doc && release --dirs=dist,doc",
     "release:init": "npm run build && release -i --dirs=dist,doc"
   },
+  "keywords":[
+      "keyframes",
+      "keyframe",
+      "keyframer",
+      "frame",
+      "scene",
+      "scenejs",
+      "css",
+      "stylesheet"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/daybrush/keyframer.git"

@@ -1,6 +1,6 @@
 # keyframer [![npm version](https://badge.fury.io/js/keyframer.svg)](https://badge.fury.io/js/keyframer)
 
-Make the keyframes in the form of the keyframes object or a playable animator.
+Make the keyframes the keyframes object.
 
 ## Installation
 ### npm

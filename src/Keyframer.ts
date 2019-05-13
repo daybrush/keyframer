@@ -1,48 +1,13 @@
 import { toArray, IObject, isObject } from "@daybrush/utils";
-import { Frame, SceneItem } from "scenejs";
+import { Frame } from "scenejs";
 import { KEYFRAMES_RULE, KEYFRAME_RULE } from "./consts";
 /**
- * Make the keyframes in the form of the keyframes object or a playable animator.
+ * Make the keyframes the keyframes object.
  * @namespace Keyframer
  */
 
 /**
- * Make Keyframes a playable animator.
- * @memberof Keyframer
- * @param - The name of the keyframes(`CSSKeyframes​Rule`) in the stylesheet(`CSSStyleSheet`).
- * @returns An animator that can play keyframes
- * @example
-// @keyframes keyframes {
-//     0% {
-//         opacity: 1;
-//         transform: translate(0px, 0px) rotate(0deg);
-//     }
-//     50% {
-//         opacity: 0;
-//         transform: translate(50px, 0px) rotate(0deg);
-//     }
-//     100% {
-//         opacity: 1;
-//         transform: translate(100px, 0px) rotate(50deg);
-//     }
-// }
-
-import { toAnimator } from "keyframer";
-
-const animtor = toAnimator("keyframes");
-animator
-    .setDuration(1)
-    .setSelector(".element")
-    .play();
- */
-export function toAnimator(name: string | IObject<string>): SceneItem {
-    const keyframes = isObject(name) ? name : getKeyframes(name);
-
-    return new SceneItem(keyframes);
-}
-
-/**
- * Make the keyframes in the form of the keyframes deep object.
+* Make the keyframes the keyframes deep object.
  * @memberof Keyframer
  * @param - The name of the keyframes(`CSSKeyframes​Rule`) in the stylesheet(`CSSStyleSheet`).
  * @returns the keyframes deep object
@@ -100,7 +65,7 @@ export function getKeyframesObject(name: string | IObject<string>): IObject<any>
 }
 
 /**
- * Make the keyframes in the form of the keyframes object.
+ * Make the keyframes the keyframes object.
  * @memberof Keyframer
  * @param - The name of the keyframes(`CSSKeyframes​Rule`) in the stylesheet(`CSSStyleSheet`).
  * @returns the keyframes object
