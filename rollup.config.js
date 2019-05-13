@@ -16,7 +16,7 @@ export default builder([
     {
         name: "Keyframer",
         input: "src/index.ts",
-        output: "./dist/keyframer.js",
+        output: "./dist/keyframer.min.js",
         exports: "named",
         resolve: true,
         uglify: true,
