@@ -1414,12 +1414,12 @@ version: 0.0.1
   var KEYFRAME_RULE = CSSRule.KEYFRAME_RULE || CSSRule.WEBKIT_KEYFRAME_RULE;
 
   /**
-   * Make the keyframes the keyframes object.
+   * Make the CSS Keyframes the keyframes object.
    * @namespace Keyframer
    */
 
   /**
-  * Make the keyframes the keyframes deep object.
+  * Make the CSS Keyframes the keyframes deep object.
    * @memberof Keyframer
    * @param - The name of the keyframes(`CSSKeyframes​Rule`) in the stylesheet(`CSSStyleSheet`).
    * @returns the keyframes deep object
@@ -1469,7 +1469,7 @@ version: 0.0.1
     return keyframesObject;
   }
   /**
-   * Make the keyframes the keyframes object.
+   * Make the CSS Keyframes the keyframes object.
    * @memberof Keyframer
    * @param - The name of the keyframes(`CSSKeyframes​Rule`) in the stylesheet(`CSSStyleSheet`).
    * @returns the keyframes object
