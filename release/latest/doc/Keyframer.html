@@ -27,7 +27,7 @@
 <label for="nav-trigger" class="overlay"></label>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h2 class="custom"><a href="https://github.com/daybrush/keyframer" target="_blank" class="menu-item" id="repository" >Github repo</a></h2><div class="search"><div class="input-area"><input type="text"/></div><button></button></div><ul class="namespaces"><li file="keyframer" class="parent"><a href="Keyframer.html">Keyframer</a><h4><a href="Keyframer.html#static methods">Static Methods</a></h4><ul class='static methods'><li data-type='method'><a href="Keyframer.html#.getKeyframes">getKeyframes</a></li><li data-type='method'><a href="Keyframer.html#.getKeyframesObject">getKeyframesObject</a></li><li data-type='method'><a href="Keyframer.html#.toAnimator">toAnimator</a></li></ul></li></ul>
+    <h2><a href="index.html">Home</a></h2><h2 class="custom"><a href="https://github.com/daybrush/keyframer" target="_blank" class="menu-item" id="repository" >Github repo</a></h2><div class="search"><div class="input-area"><input type="text"/></div><button></button></div><ul class="namespaces"><li file="keyframer" class="parent"><a href="Keyframer.html">Keyframer</a><h4><a href="Keyframer.html#static methods">Static Methods</a></h4><ul class='static methods'><li data-type='method'><a href="Keyframer.html#.getKeyframes">getKeyframes</a></li><li data-type='method'><a href="Keyframer.html#.getKeyframesObject">getKeyframesObject</a></li></ul></li></ul>
 </nav>
 
 <div id="main">
@@ -100,7 +100,7 @@
 
 
         
-            <div class="description">Make the keyframes in the form of the keyframes object or a playable animator.</div>
+            <div class="description">Make the keyframes the keyframes object.</div>
         
 
         
@@ -139,7 +139,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Keyframer.ts.html">Keyframer.ts</a>, <a href="Keyframer.ts.html#line132">line 132</a>
+        <a href="Keyframer.ts.html">Keyframer.ts</a>, <a href="Keyframer.ts.html#line88">line 88</a>
     </li></ul></dd>
     
 
@@ -179,7 +179,7 @@
 
 
 <div class="description">
-    Make the keyframes in the form of the keyframes object.
+    Make the keyframes the keyframes object.
 </div>
 
 
@@ -261,12 +261,12 @@
 
 import { getKeyframes } from "keyframer";
 
-const obj = getKeyframes("keyframes");
 // {
 //     "0%": "opacity: 1; transform: translate(0px, 0px) rotate(0deg)",
 //     "50%": "opacity: 0; transform: translate(50px, 0px) rotate(0deg)",
 //     "100%": "opacity: 1; transform: translate(100px, 0px) rotate(50deg)",
-// }</code></pre>
+// }
+const obj = getKeyframes("keyframes");</code></pre>
 
 
 
@@ -323,7 +323,7 @@ const obj = getKeyframes("keyframes");
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Keyframer.ts.html">Keyframer.ts</a>, <a href="Keyframer.ts.html#line92">line 92</a>
+        <a href="Keyframer.ts.html">Keyframer.ts</a>, <a href="Keyframer.ts.html#line48">line 48</a>
     </li></ul></dd>
     
 
@@ -363,7 +363,7 @@ const obj = getKeyframes("keyframes");
 
 
 <div class="description">
-    Make the keyframes in the form of the keyframes deep object.
+    Make the keyframes the keyframes deep object.
 </div>
 
 
@@ -449,24 +449,15 @@ const obj = getKeyframesObject("keyframes");
 // {
 //     "0%": {
 //         opacity: 1,
-//         transform: {
-//             translate: "0px,0px",
-//             rotate: "0deg",
-//         },
+//         transform: { translate: "0px,0px", rotate: "0deg" },
 //     }
 //     "50%": {
 //         opacity: 0,
-//         transform: {
-//             translate: "50px,0px",
-//             rotate: "0deg",
-//         },
+//         transform: { translate: "50px,0px", rotate: "0deg" },
 //     },
 //     "100%": {
 //         opacity: 1,
-//         transform: {
-//             translate: "100px,0px",
-//             rotate: "50deg",
-//         },
+//         transform: { translate: "100px,0px", rotate: "50deg" },
 //     },
 // }</code></pre>
 
@@ -509,189 +500,6 @@ const obj = getKeyframesObject("keyframes");
 
 
         
-            
-
-    
-
-    <h4 class="name" id=".toAnimator"><span class="type-signature">(static) </span>toAnimator<span class="signature">(name)</span><span class="type-signature"> &rarr; {<a href="http://daybrush.com/scenejs/release/latest/doc/SceneItem.html" target="_blank">SceneItem</a>}</span></h4>
-
-    
-
-
-
-
-<dl class="details">
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Keyframer.ts.html">Keyframer.ts</a>, <a href="Keyframer.ts.html#line38">line 38</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-<div class="description">
-    Make Keyframes a playable animator.
-</div>
-
-
-
-
-
-
-
-
-
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>name</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string | <a href="http://daybrush.com/utils/release/latest/doc/global.html#ObjectInterface" target="_blank">IObject</a>&lt;string></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">The name of the keyframes(`CSSKeyframes​Rule`) in the stylesheet(`CSSStyleSheet`).</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-    <h5>Example</h5>
-    
-    <pre class="prettyprint"><code>// @keyframes keyframes {
-//     0% {
-//         opacity: 1;
-//         transform: translate(0px, 0px) rotate(0deg);
-//     }
-//     50% {
-//         opacity: 0;
-//         transform: translate(50px, 0px) rotate(0deg);
-//     }
-//     100% {
-//         opacity: 1;
-//         transform: translate(100px, 0px) rotate(50deg);
-//     }
-// }
-
-import { toAnimator } from "keyframer";
-
-const animtor = toAnimator("keyframes");
-animator
-    .setDuration(1)
-    .setSelector(".element")
-    .play();</code></pre>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-<div class="param-desc">
-    An animator that can play keyframes
-</div>
-
-
-
-<dl class="param-type">
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type"><a href="http://daybrush.com/scenejs/release/latest/doc/SceneItem.html" target="_blank">SceneItem</a></span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-        
     
 
     
@@ -721,7 +529,7 @@ nav li[file="keyframer"] h4, nav li[file="keyframer"] ul {
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/daybrush/jsdoc">JSDoc 0.3.7</a> on Tue May 14 2019 01:27:17 GMT+0900 (GMT+09:00) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+    Documentation generated by <a href="https://github.com/daybrush/jsdoc">JSDoc 0.3.7</a> on Tue May 14 2019 02:03:41 GMT+0900 (GMT+09:00) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
 </footer>
 
 <script>prettyPrint();</script>
