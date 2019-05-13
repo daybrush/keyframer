@@ -33,24 +33,15 @@ const obj = getKeyframesObject("keyframes");
 // {
 //     "0%": {
 //         opacity: 1,
-//         transform: {
-//             translate: "0px,0px",
-//             rotate: "0deg",
-//         },
+//         transform: { translate: "0px,0px", rotate: "0deg" },
 //     }
 //     "50%": {
 //         opacity: 0,
-//         transform: {
-//             translate: "50px,0px",
-//             rotate: "0deg",
-//         },
+//         transform: { translate: "50px,0px", rotate: "0deg" },
 //     },
 //     "100%": {
 //         opacity: 1,
-//         transform: {
-//             translate: "100px,0px",
-//             rotate: "50deg",
-//         },
+//         transform: { translate: "100px,0px", rotate: "50deg" },
 //     },
 // }
  */
@@ -87,12 +78,12 @@ export function getKeyframesObject(name: string | IObject<string>): IObject<any>
 
 import { getKeyframes } from "keyframer";
 
-const obj = getKeyframes("keyframes");
 // {
 //     "0%": "opacity: 1; transform: translate(0px, 0px) rotate(0deg)",
 //     "50%": "opacity: 0; transform: translate(50px, 0px) rotate(0deg)",
 //     "100%": "opacity: 1; transform: translate(100px, 0px) rotate(50deg)",
 // }
+const obj = getKeyframes("keyframes");
  */
 export function getKeyframes(name: string): IObject<string> {
     const styleSheets = toArray(document.styleSheets) as CSSStyleSheet[];

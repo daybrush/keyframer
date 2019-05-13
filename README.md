@@ -9,7 +9,7 @@ $ npm install keyframer
 ```
 
 ### scripts
-* Unpackaged
+* Unpackaged (dependency in [**scenejs**](https://github.com/daybrush/scenejs))
 
 ```html
 <script src="//daybrush.com/keyframer/release/latest/dist/keyframer.min.js"></script>
@@ -20,6 +20,58 @@ $ npm install keyframer
 <script src="//daybrush.com/keyframer/release/latest/dist/keyframer.pkgd.min.js"></script>
 ```
 
+## Getting Started
+```html
+<style>
+@keyframes keyframes {
+    0% {
+        opacity: 1;
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    50% {
+        opacity: 0;
+        transform: translate(50px, 0px) rotate(0deg);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(100px, 0px) rotate(50deg);
+    }
+}
+</style>
+```
+
+```js
+import { getKeyframes, getKeyframesObject } from "keyframer";
+
+/*
+{
+    "0%": "opacity: 1; transform: translate(0px, 0px) rotate(0deg)",
+    "50%": "opacity: 0; transform: translate(50px, 0px) rotate(0deg)",
+    "100%": "opacity: 1; transform: translate(100px, 0px) rotate(50deg)",
+}
+*/
+// Keyframer.getKeyframes("keyframes")
+const obj = getKeyframes("keyframes");
+
+/*
+{
+    "0%": {
+        opacity: 1,
+        transform: { translate: "0px,0px", rotate: "0deg" },
+    }
+    "50%": {
+        opacity: 0,
+        transform: { translate: "50px,0px", rotate: "0deg" },
+    },
+    "100%": {
+        opacity: 1,
+        transform: { translate: "100px,0px", rotate: "50deg" },
+    },
+}
+*/
+// Keyframer.getKeyframesObject("keyframes")
+const obj = getKeyframesObject("keyframes");
+```
 ## API Documents
 * [API documentation](https://daybrush.com/keyframer/release/latest/doc/)
 
