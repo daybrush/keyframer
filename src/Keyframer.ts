@@ -1,4 +1,4 @@
-import { toArray, IObject, isObject } from "@daybrush/utils";
+import { toArray, IObject, isObject, splitComma } from "@daybrush/utils";
 import { Frame } from "scenejs";
 import { KEYFRAMES_RULE, KEYFRAME_RULE } from "./consts";
 /**
@@ -115,7 +115,9 @@ export function getKeyframes(name: string): IObject<string> {
                     const keyText = rule.keyText;
                     const cssText = rule.style.cssText;
 
-                    obj[keyText] = cssText;
+                    splitComma(keyText).forEach(time => {
+                        obj[time] = cssText;
+                    });
                 }
             });
             return obj;
