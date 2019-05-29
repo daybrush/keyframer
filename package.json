@@ -1,6 +1,6 @@
 {
   "name": "keyframer",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Make the CSS Keyframes the keyframes object.",
   "main": "./dist/keyframer.cjs.js",
   "module": "./dist/keyframer.esm.js",
@@ -15,15 +15,15 @@
     "release": "npm run build && npm run doc && release --dirs=dist,doc",
     "release:init": "npm run build && release -i --dirs=dist,doc"
   },
-  "keywords":[
-      "keyframes",
-      "keyframe",
-      "keyframer",
-      "frame",
-      "scene",
-      "scenejs",
-      "css",
-      "stylesheet"
+  "keywords": [
+    "keyframes",
+    "keyframe",
+    "keyframer",
+    "frame",
+    "scene",
+    "scenejs",
+    "css",
+    "stylesheet"
   ],
   "repository": {
     "type": "git",
@@ -37,12 +37,12 @@
   "homepage": "https://github.com/daybrush/keyframer#readme",
   "dependencies": {
     "@daybrush/utils": "^0.7.1",
-    "scenejs": "^1.0.0-rc8"
+    "scenejs": "^1.0.0"
   },
   "devDependencies": {
     "@daybrush/builder": "0.0.5",
     "@daybrush/jsdoc": "^0.3.7",
-    "@daybrush/release": "^0.1.1",
+    "@daybrush/release": "^0.2.4",
     "daybrush-jsdoc-template": "^1.5.3",
     "print-sizes": "0.0.4",
     "tslint": "^5.16.0",
