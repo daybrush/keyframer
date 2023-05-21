@@ -4,7 +4,7 @@ name: keyframer
 license: MIT
 author: Daybrush
 repository: git+https://github.com/daybrush/keyframer.git
-version: 0.1.1
+version: 0.0.3
 */
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
@@ -6359,4 +6359,4 @@ version: 0.1.1
   exports.getKeyframesObject = getKeyframesObject;
 
 }));
-//# sourceMappingURL=keyframer.js.map
+//# sourceMappingURL=keyframer.pkgd.js.map
